@@ -87,7 +87,7 @@ def generate_pdf(income, is_salaried, new_tax, old_tax, new_breakdown, old_break
 st.set_page_config(page_title="2025 India Tax Calculator", layout="centered", initial_sidebar_state="collapsed")
 st.title("India 2025 Income Tax Calculator")
 
-st.markdown("### 💰 Compare Old vs New Tax Regime & Download Your Report")
+st.markdown("### 💰 Compare Old vs New Tax Regime")
 
 # Input fields
 income = st.number_input("Enter your annual income (in ₹):", min_value=0, step=1000, value=800000)
