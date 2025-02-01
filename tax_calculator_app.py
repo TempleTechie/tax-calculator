@@ -1,5 +1,4 @@
 import streamlit as st
-from fpdf import FPDF
 
 # Function to calculate tax based on the regime
 def calculate_tax(income, is_salaried, regime="new"):
@@ -116,10 +115,6 @@ with col2:
     for item in old_breakdown:
         st.write(f"- {item}")
 
-# PDF Download Button
-if st.button("📄 Download Tax Report (PDF)"):
-    generate_pdf(income, is_salaried, new_tax, old_tax, new_breakdown, old_breakdown)
-    st.success("✅ PDF generated! Check your project folder.")
 
 st.markdown("---")
 st.caption("📌 Note: This is a simplified calculation based on the **2025 Budget** tax slabs.")
